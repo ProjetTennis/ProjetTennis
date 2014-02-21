@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package gesmatch;
+
+import javax.swing.UIManager;
 
 /**
  *
@@ -12,13 +8,12 @@ package gesmatch;
  */
 public class GesMatch
 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception
       {
-        
+           UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); // Permet d'avoir l'interface windows
+           
+          AdminAccueil fenetre = new AdminAccueil();
+          fenetre.setVisible(true);
       }
     
 }
